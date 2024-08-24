@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="form-container">
+                <div id="step-1" class="step active">
+                    <h1>Register</h1>
+                    <form id="form-step-1">
+                        <h5>Name</h5>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                        <h5>Email</h5>
+                        <input type="email" id="email" placeholder="example@gmail.com" required>
+                        <button type="button" onclick="nextStep(2)" class="btn">Continue</button>
+                    </form>
+                </div>
+                <div id="step-2" class="step">
+                    <h2>What topics you are interested in?</h2>
+                    <form id="form-step-2">
+                        <button type="button" class="topic-button" data-topic="Software Development" onclick="selectTopic(this)">Software Development</button>
+                        <button type="button" class="topic-button active" data-topic="User Experience" onclick="selectTopic(this)">User Experience</button>
+                        <button type="button" class="topic-button" data-topic="Graphic Design" onclick="selectTopic(this)">Graphic Design</button>
+                        <button type="button" onclick="nextStep(3)">Continue</button>
+                    </form>
+                </div>
+                <div id="step-3" class="step">
+                    <h2 class="Summary">Summary</h2>
+                    <p>Name: <span id="summary-name"></span></p>
+                    <p>Email: <span id="summary-email"></span></p>
+                    <div id="topic"><h5>Topics:</h5>
+                        <ul id="summary-topics"></ul>
+                    </div> 
+                    <button type="button" onclick="submitForm()">Confirm</button>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="step-count">
+                <span id="step-count-text">Step 1 of 3</span>
+            </div>
+            <div class="steps-indicator">
+                <span class="step-indicator active"></span>
+                <span class="step-indicator"></span>
+                <span class="step-indicator"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #20254e;
+    color: white;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./blur-radial.svg);
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    background-color: #212936;
+    padding: 30px; 
+    border-radius: 15px; 
+    width: 600px; 
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.step {
+    text-align: left;
+    padding-top: 10px;
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+.step-1 h1{
+    font-size: 1.25rem;
+}
+
+#form-step-1 h5,
+#form-step-2 h5 {
+    margin-top: 20px; 
+    font-size: 0.875rem;
+}
+
+#form-step-1 input[type="text"],
+#form-step-1 input[type="email"] {
+    margin-bottom: 20px; 
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px; /* Matching container width */
+    padding: 15px 0; /* Adjusted padding for proper alignment */
+    gap: 30px; /* Adjusted gap to better space elements */
+}
+
+.step-count {
+    font-size: 16px; /* Adjusted font size for better alignment */
+    color: #4D5562;
+}
+
+.steps-indicator {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.step-indicator {
+    width: 16px; /* Small step indicators as per the design */
+    height: 16px;
+    background-color: #394150;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.step-indicator.active, .step-indicator.completed {
+    background-color: #845EEE;
+}
+.step-indicator.active{
+
+    border: 5px solid rgba(101, 44, 209, 0.2);
+    
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+button {
+    width: 100%;
+    padding: 18px; /* Adjusted padding for consistency with visuals */
+    margin-top: 10px; /* Reduced spacing to align elements closer together */
+    border: 2px solid #7A37FF;
+    border-radius: 10px;
+    background-color: #252734;
+    color: #A1A1A9;
+    font-size: 14px; /* Font size adjusted to match the images */
+    box-sizing: border-box;
+}
+
+ .step-1 h5 {
+    text-align: left;
+    margin-bottom: 8px; /* Slightly reduced to bring h5 closer to inputs */
+    margin-top: 0; /* No margin on top to align with inputs */
+    font-size: 0.875rem;
+}
+
+.btn{
+    background-color: #845EEE ;
+    color: #E5E7EB;
+    border-radius: 50px;
+}
+
+.step-2 h2{
+    font-size: 1rem;
+}
+
+button {
+    width: 50%; /* Reduced button width */
+    background-color: #7A37FF;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px; /* Adjusted margin to match visual alignment */
+    font-size: 14px; /* Smaller font size to match visual proportions */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #652CD1;
+}
+
+.topic-button {
+    width: 100%;
+    padding: 18px; /* Padding adjusted to match other inputs */
+    margin-top: 10px; /* Reduced spacing for visual consistency */
+    border: 2px solid #252734;
+    border-radius: 10px;
+    background-color: #212936;
+    color: #4D5562;
+    font-size: 14px; /* Font size ad4D5562justed to match */
+    cursor: pointer;
+}
+
+.topic-button.active {
+    background-color: #652CD1;
+    color: #E5E7EB;
+}
+
+.step {
+    display: none;
+    line-height: 1.6; 
+}
+
+.step.active {
+    display: block;
+}
+
+/* Step 3: Summary */
+.Summary{
+    font-size:1.25rem;
+    margin: 20px;
+}
+
+
+#summary-name,
+#summary-email {
+    margin-bottom: 10px;
+    padding-top: 40px; 
+    font-size: 1rem;
+    color: #E5E7EB 
+}
+
+#topic {
+    margin-top: 15px; 
+    font-size: 1rem;
+    color: #4D5562;
+}
+
+#summary-topics {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-size: 1rem;
+    color: #E5E7EB ;
+}
+
+#summary-topics li {
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
