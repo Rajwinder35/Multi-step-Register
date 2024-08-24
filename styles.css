@@ -155,8 +155,8 @@ button:hover {
 .topic-button {
     width: 100%;
     padding: 18px; /* Padding adjusted to match other inputs */
-    margin-top: 10px; /* Reduced spacing for visual consistency */
-    border: 2px solid #252734;
+    margin-top: 25px; /* Reduced spacing for visual consistency */
+    border: 2px solid #61626d;
     border-radius: 10px;
     background-color: #212936;
     color: #4D5562;
